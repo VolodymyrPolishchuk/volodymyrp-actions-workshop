@@ -23,11 +23,13 @@ export function formatDate(format: string, date: Date): string {
     const MMM = monthsShort[date.getMonth()];
     console.log({MMM});
     const DD = padZero(date.getDate());
+    const D = date.getDate();
 
     return format
         .replace(/YYYY/g, YYYY.toString())
         .replace(/YY/g, YY)
         .replace(/MMM/g, MMM)
         .replace(/MM/g, MM)
-        .replace(/DD/g, DD);
+        .replace(/DD/g, DD)
+        .replace(/D/g, D.toString());
 }

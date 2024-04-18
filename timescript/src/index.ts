@@ -1,7 +1,7 @@
 // ./src/index.ts
 
 import log from '@ajar/marker';  
-import { formatDate } from "./date-formatter.js"; // <-- .js
+import { formatDate } from "./date-formatter";
 
 // example usage...
 
