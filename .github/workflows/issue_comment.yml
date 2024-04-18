@@ -1,0 +1,15 @@
+# .github/workflows/issue_comment.yml
+
+name: Create a comment on new issues
+
+on: 
+  issues: 
+    types: [opened]
+
+jobs:
+  action-comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print github context
+        run: echo '${{ toJSON(github.event) }}' 
+        shell: bash
