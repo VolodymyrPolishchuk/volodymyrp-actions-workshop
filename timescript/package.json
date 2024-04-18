@@ -26,5 +26,9 @@
   "directories": {
     "test": "test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VolodymyrPolishchuk/volodymyrp-actions-workshop"
+},
   "description": ""
 }
